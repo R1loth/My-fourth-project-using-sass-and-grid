@@ -1,0 +1,198 @@
+//primary-colors//
+$cyan: hsl(179, 62%, 43%);
+$brightYellow: hsl(71, 73%, 54%);
+//neutral-colors//
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+//font-size//
+$fontSize: 16px;
+//family-import//
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/*weights: 400, 700 font-family: 'Karla',
+sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $lightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 635px;
+    max-height:475px;
+    
+
+    background-color: #FFFF;
+    border-radius: 8px;
+    margin: 0 20px 0 20px;
+}
+
+.box1 {
+    grid-column: span 2;
+}
+
+.box1 h1 {
+    color: $cyan;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    padding: 40px 0px 24px 40px;
+}
+
+.box1 h2 {
+    color: $brightYellow;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+    padding: 0 0 11px 40px;
+    
+}
+
+.box1 p {
+    color: #9AA7BE;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+
+    padding: 0 40px 40px 40px;
+}
+
+.box2 {
+    background-color: $cyan;
+}
+
+.box2 h2 {
+    color: #FFFFFF;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+
+    padding: 40px 0 18px 40px;
+}
+
+.paragraph2 {
+    color: #FFFFFF;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+
+    padding: 6px 0 26px 40px;
+}
+
+.subscription {
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.dollar {
+    color: white;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: -0.4px;
+    padding: 0 0 4px 40px;
+}
+
+.paragraph {
+    color: white;
+    opacity: 0.5;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    padding: 6px 1px 5px 11px;
+    vertical-align: 5px;
+}
+
+
+a {
+    text-decoration: none;
+    width: 59px;
+    height: auto;
+    background: $brightYellow;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 5px;
+    display: block;
+    margin: 26px 0 39px 40px;
+    
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+
+    padding: 15px 89px 14px 89px;
+    
+}
+
+.box3 {
+    background-color: $cyan;
+    opacity: 0.85;
+}
+
+
+.box3 h2 {
+    color: #FFFF;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+
+    padding: 40px 0 18px 40px;
+}
+
+.box3 p {
+    color: #FFFF;
+    mix-blend-mode: normal;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.175px;
+    padding: 0 40px 40px 40px;
+    opacity: 0.75;
+    
+}
+
+@media only screen and (max-width: 480px){
+    .grid {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 20px 20px;
+        margin-bottom: 50px;
+    }
+
+}
